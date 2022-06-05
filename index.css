@@ -1,0 +1,22 @@
+html, body {
+	height:100%;
+    margin:0;
+    padding:0;
+}
+
+.header-method-selector {
+	width: 100vw;
+	height: 5vh;
+	text-align: center;
+}
+
+.whole-screen-sort {
+	width: 100vw;
+	height: 95vh;
+	border: 1px solid red;
+	position: fixed;
+	bottom: 0;
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-between;
+}
