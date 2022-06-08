@@ -13,10 +13,8 @@ html, body {
 .whole-screen-sort {
 	width: 100vw;
 	height: 95vh;
-	border: 1px solid red;
-	position: fixed;
-	bottom: 0;
-	  display: flex;
-	  flex-direction: row;
-	  justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: end;
 }
