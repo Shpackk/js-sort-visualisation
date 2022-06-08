@@ -6,6 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sorting</title>
+	<script>
+		function reload() { window.location.reload() }
+	</script>
 </head>
 <body>
 	<div class="header-method-selector" id="header-method-selector">
@@ -14,18 +17,18 @@
 			<select id="algorithms" name="algorithms">
 			  <option value="bubble">Bubble</option>
 			  <option value="quick">Quick Sort</option>
-			  <option value="">Another</option>
+			  <option value="selection">Selection</option>
 			  <option value="">Another</option>
 			</select> <br>
 			<label for="value">Chose amount of values to generate</label>
 			<input type="text" name="amount" id="amount">
-			<input type="submit">
-		  </form>
+			<input type="submit" value="Run">
+		</form>
+		<button onclick="reload()">Reload</button>
 	</div>
 	<div class="whole-screen-sort" id="whole-screen-sort"></div>
 </body>
 	<script type="module" src="./index.mjs"></script>
 	<script type="module" src="./helpers/misc.mjs"></script>
 	<script type="module" src="./sorting_algos.mjs"></script>
-	
 </html>
