@@ -1,5 +1,5 @@
-import { bubbleSort } from './sorting_algos.mjs'
-import { logBigO } from './helpers/htmlWork.mjs'
+import { algos } from './sorting_algos.mjs'
+import { logBigO, logTime } from './helpers/htmlWork.mjs'
 const formElement = document.querySelector('form')
 const algoSelector = document.getElementById('algorithms')
 const amountInput = document.getElementById('amount')
@@ -40,16 +40,8 @@ function generateArray(amountOfNums) {
 	return arr;
 }
 
-function selectAndSort(selectedAlgo, arr){
-	switch (selectedAlgo) {
-		case 'bubble':
-			bubbleSort(arr)
-			logBigO('bubble')
-			break;
-		case 'quick':
-
-			break;
-		default:
-			break;
-	}
+async function selectAndSort(selectedAlgo, arr){
+	const time = await algos[selectedAlgo](arr)
+	logBigO(selectedAlgo)
+	logTime(time)
 }
